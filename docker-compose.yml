@@ -8,6 +8,7 @@ volumes:
 
 services:
   nocobase-app:
+    container_name: exp-nocobase-app
     image: nocobase/nocobase:latest
     restart: always
     networks:
@@ -45,6 +46,7 @@ services:
 
   # 既存のデータベースサービスを使用する場合、mariadb を起動する必要はありません
   nocobase-db:
+    container_name: exp-nocobase-db
     image: mariadb:11
     environment:
       MYSQL_DATABASE: nocobase
