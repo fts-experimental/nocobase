@@ -14,7 +14,7 @@ services:
     networks:
       - nocobase
     depends_on:
-      - nocobase-db
+      - exp-nocobase-db
     environment:
       # アプリケーションのシークレットキー、ユーザートークンなどを生成するのに使用します
       # APP_KEY が変更されると、古いトークンも無効になります
