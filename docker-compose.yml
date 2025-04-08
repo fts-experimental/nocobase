@@ -23,7 +23,7 @@ services:
       # データベースタイプ、postgres、mysql、mariadb に対応
       - DB_DIALECT=mariadb
       # データベースホスト、既存のデータベースサーバーの IP に置き換えることができます
-      - DB_HOST=nocobase-db
+      - DB_HOST=exp-nocobase-db
       # データベース名
       - DB_DATABASE=nocobase
       # データベースユーザー
